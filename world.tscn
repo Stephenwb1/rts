@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://c47xsvlkjo2r5"]
+
+[ext_resource type="Script" uid="uid://bsofx021jb3bv" path="res://movement.gd" id="1_f3sb7"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gv5m4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3sb7"]
+size = Vector2(76, 132)
+
+[node name="World" type="Node2D" unique_id=1505574220]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1989649140]
+position = Vector2(252.99994, 455)
+script = ExtResource("1_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1089043617]
+scale = Vector2(75.5, 131.5)
+texture = SubResource("PlaceholderTexture2D_gv5m4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1028838426]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="CharacterBody2D" unique_id=1871603646]
+
+[node name="CharacterBody2D2" type="CharacterBody2D" parent="." unique_id=256204770]
+position = Vector2(392, 209)
+script = ExtResource("1_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D2" unique_id=1864308258]
+scale = Vector2(75.5, 131.5)
+texture = SubResource("PlaceholderTexture2D_gv5m4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D2" unique_id=1534338832]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="CharacterBody2D2" unique_id=208336541]
+
+[node name="CharacterBody2D3" type="CharacterBody2D" parent="." unique_id=426919705]
+position = Vector2(563, 251)
+script = ExtResource("1_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D3" unique_id=979572292]
+scale = Vector2(75.5, 131.5)
+texture = SubResource("PlaceholderTexture2D_gv5m4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D3" unique_id=239123666]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="CharacterBody2D3" unique_id=1930507503]
+
+[node name="CharacterBody2D4" type="CharacterBody2D" parent="." unique_id=1773472392]
+position = Vector2(554, 448)
+script = ExtResource("1_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D4" unique_id=840403574]
+scale = Vector2(75.5, 131.5)
+texture = SubResource("PlaceholderTexture2D_gv5m4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D4" unique_id=571209619]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="CharacterBody2D4" unique_id=943900709]
+
+[node name="CharacterBody2D5" type="CharacterBody2D" parent="." unique_id=370792782]
+position = Vector2(775, 449)
+script = ExtResource("1_f3sb7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D5" unique_id=1379183672]
+scale = Vector2(75.5, 131.5)
+texture = SubResource("PlaceholderTexture2D_gv5m4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D5" unique_id=518581749]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="CharacterBody2D5" unique_id=1594405196]

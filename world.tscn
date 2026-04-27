@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c47xsvlkjo2r5"]
 
 [ext_resource type="Script" uid="uid://bsofx021jb3bv" path="res://movement.gd" id="1_f3sb7"]
+[ext_resource type="Script" uid="uid://dav84pckami16" path="res://move_units.gd" id="1_fj7yv"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_gv5m4"]
 
@@ -8,6 +9,7 @@
 size = Vector2(76, 132)
 
 [node name="World" type="Node2D" unique_id=1505574220]
+script = ExtResource("1_fj7yv")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1989649140]
 position = Vector2(252.99994, 455)

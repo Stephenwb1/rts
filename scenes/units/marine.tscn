@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://dlv4rl2f1hh6a"]
+
+[ext_resource type="Script" uid="uid://bsofx021jb3bv" path="res://scripts/movement.gd" id="1_8oeqk"]
+[ext_resource type="Script" uid="uid://vmsftnyqwi3v" path="res://scripts/selection_indicator.gd" id="2_y6mcg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fj7yv"]
+load_path = "res://.godot/imported/scifiUnit_15.png-cf92432f6c8a04abebde9356065f8695.ctex"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4vyq7"]
+radius = 20.499939
+height = 50.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1440746039]
+script = ExtResource("1_8oeqk")
+
+[node name="SelectionIndicator" type="Node2D" parent="." unique_id=151158199]
+z_index = -1
+script = ExtResource("2_y6mcg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1244457321]
+texture = SubResource("CompressedTexture2D_fj7yv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=608322224]
+position = Vector2(0, -2)
+shape = SubResource("CapsuleShape2D_4vyq7")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1799337087]

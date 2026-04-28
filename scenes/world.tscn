@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://c47xsvlkjo2r5"]
+
+[ext_resource type="Script" uid="uid://dav84pckami16" path="res://scripts/move_units.gd" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://dlv4rl2f1hh6a" path="res://scenes/units/marine.tscn" id="3_4wyf3"]
+
+[node name="World" type="Node2D" unique_id=1505574220]
+script = ExtResource("1_fj7yv")
+
+[node name="CharacterBody2D2" parent="." unique_id=1440746039 instance=ExtResource("3_4wyf3")]
+position = Vector2(580, 357)
+
+[node name="CharacterBody2D3" parent="." unique_id=2085451665 instance=ExtResource("3_4wyf3")]
+position = Vector2(253, 260)
+
+[node name="CharacterBody2D4" parent="." unique_id=194846113 instance=ExtResource("3_4wyf3")]
+position = Vector2(769, 471)
+
+[node name="CharacterBody2D5" parent="." unique_id=1768571686 instance=ExtResource("3_4wyf3")]
+position = Vector2(695, 231)
+
+[node name="CharacterBody2D6" parent="." unique_id=1089355135 instance=ExtResource("3_4wyf3")]
+position = Vector2(384, 541)
+
+[node name="CharacterBody2D7" parent="." unique_id=1776920409 instance=ExtResource("3_4wyf3")]
+position = Vector2(607, 516)
+
+[node name="CharacterBody2D8" parent="." unique_id=239270942 instance=ExtResource("3_4wyf3")]
+position = Vector2(797, 542)
+
+[node name="CharacterBody2D9" parent="." unique_id=126515629 instance=ExtResource("3_4wyf3")]
+position = Vector2(407, 397)
+
+[node name="CharacterBody2D10" parent="." unique_id=594056902 instance=ExtResource("3_4wyf3")]
+position = Vector2(494, 445)
+
+[node name="CharacterBody2D11" parent="." unique_id=517183618 instance=ExtResource("3_4wyf3")]
+position = Vector2(457, 272)

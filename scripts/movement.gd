@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 var target: Vector2 = Vector2.ZERO
 var speed: float = 150.0
-var selected: bool = false
+@export var selected: bool = false
 
 var current_hp: int = 40
 var max_hp: int = 40

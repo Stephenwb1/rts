@@ -1,37 +1,49 @@
 [gd_scene format=3 uid="uid://c47xsvlkjo2r5"]
 
 [ext_resource type="Script" uid="uid://dav84pckami16" path="res://scripts/move_units.gd" id="1_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://fj2uacxqgjcu" path="res://assets/sprites/Sample.png" id="2_4wyf3"]
 [ext_resource type="PackedScene" uid="uid://dlv4rl2f1hh6a" path="res://scenes/units/marine.tscn" id="3_4wyf3"]
+[ext_resource type="Script" uid="uid://clst2liabrlmv" path="res://scripts/camera_motion.gd" id="3_k0juu"]
 
 [node name="World" type="Node2D" unique_id=1505574220]
 script = ExtResource("1_fj7yv")
 
+[node name="Sample" type="Sprite2D" parent="." unique_id=2085349277]
+z_index = -1
+position = Vector2(-2, 6)
+scale = Vector2(2.5660875, 2.6184466)
+texture = ExtResource("2_4wyf3")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1284267730]
+script = ExtResource("3_k0juu")
+scroll_speed = 1600.0
+
 [node name="CharacterBody2D2" parent="." unique_id=1440746039 instance=ExtResource("3_4wyf3")]
-position = Vector2(580, 357)
+position = Vector2(10, -31)
 
 [node name="CharacterBody2D3" parent="." unique_id=2085451665 instance=ExtResource("3_4wyf3")]
-position = Vector2(253, 260)
+position = Vector2(-317, -128)
 
 [node name="CharacterBody2D4" parent="." unique_id=194846113 instance=ExtResource("3_4wyf3")]
-position = Vector2(769, 471)
+position = Vector2(199, 83)
 
 [node name="CharacterBody2D5" parent="." unique_id=1768571686 instance=ExtResource("3_4wyf3")]
-position = Vector2(695, 231)
+position = Vector2(125, -157)
 
 [node name="CharacterBody2D6" parent="." unique_id=1089355135 instance=ExtResource("3_4wyf3")]
-position = Vector2(384, 541)
+position = Vector2(-186, 153)
 
 [node name="CharacterBody2D7" parent="." unique_id=1776920409 instance=ExtResource("3_4wyf3")]
-position = Vector2(607, 516)
+position = Vector2(37, 128)
 
 [node name="CharacterBody2D8" parent="." unique_id=239270942 instance=ExtResource("3_4wyf3")]
-position = Vector2(797, 542)
+position = Vector2(227, 154)
 
 [node name="CharacterBody2D9" parent="." unique_id=126515629 instance=ExtResource("3_4wyf3")]
-position = Vector2(407, 397)
+position = Vector2(-163, 9)
 
 [node name="CharacterBody2D10" parent="." unique_id=594056902 instance=ExtResource("3_4wyf3")]
-position = Vector2(494, 445)
+position = Vector2(-76, 57)
 
 [node name="CharacterBody2D11" parent="." unique_id=517183618 instance=ExtResource("3_4wyf3")]
-position = Vector2(457, 272)
+position = Vector2(-113, -116)

@@ -1,5 +1,7 @@
 extends Node2D
 
+@onready var formation_manager = $FormationManager
+
 var selected_units: Array = [];
 
 var drag_start: Vector2 = Vector2.ZERO
@@ -33,8 +35,7 @@ func _input(event):
 	#Right click
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
 		var click = get_global_mouse_position() # where I clicked
-		for unit in selected_units:
-			unit.target = click
+		formation_manager.assign_formation(selected_units, click)
 
 
 func _process(_delta):

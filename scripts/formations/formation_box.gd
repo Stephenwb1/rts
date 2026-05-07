@@ -10,5 +10,5 @@ func get_positions(units: Array, target: Vector2) -> Array:
 	for i in range(count):
 		var col = i % int(cols)
 		var row = i / int(cols)
-		positions.apend(Vector2(start_x + col * spacing, start_y + row * spacing))
+		positions.append(Vector2(start_x + col * spacing, start_y + row * spacing))
 	return positions

@@ -6,8 +6,17 @@
 [ext_resource type="PackedScene" uid="uid://dlv4rl2f1hh6a" path="res://scenes/units/marine.tscn" id="3_4wyf3"]
 [ext_resource type="Script" uid="uid://clst2liabrlmv" path="res://scripts/camera_motion.gd" id="3_k0juu"]
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_71j4m"]
+vertices = PackedVector2Array(1080.8281, 653.8594, -1089.3594, 625.1328, -1019.5781, -493.25, 1061.1563, -551.71094)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-1029, -503, 1071, -562, 1091, 664, -1100, 635)])
+
 [node name="World" type="Node2D" unique_id=1505574220]
 script = ExtResource("1_fj7yv")
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=2055855411]
+visible = false
+navigation_polygon = SubResource("NavigationPolygon_71j4m")
 
 [node name="FormationManager" type="Node2D" parent="." unique_id=1261420870]
 script = ExtResource("2_71j4m")

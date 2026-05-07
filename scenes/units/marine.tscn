@@ -6,14 +6,14 @@
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fj7yv"]
 load_path = "res://.godot/imported/scifiUnit_15.png-cf92432f6c8a04abebde9356065f8695.ctex"
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4vyq7"]
-radius = 20.499939
-height = 50.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y6mcg"]
+size = Vector2(22, 18)
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=1440746039]
 script = ExtResource("1_8oeqk")
 
 [node name="SelectionIndicator" type="Node2D" parent="." unique_id=151158199]
+visible = false
 z_index = -1
 script = ExtResource("2_y6mcg")
 
@@ -21,7 +21,9 @@ script = ExtResource("2_y6mcg")
 texture = SubResource("CompressedTexture2D_fj7yv")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=608322224]
-position = Vector2(0, -2)
-shape = SubResource("CapsuleShape2D_4vyq7")
+position = Vector2(0, 13)
+shape = SubResource("RectangleShape2D_y6mcg")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1799337087]
+
+[connection signal="velocity_computed" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_velocity_computed"]
